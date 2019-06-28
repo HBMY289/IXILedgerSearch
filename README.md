@@ -8,13 +8,13 @@ After you've cloned it, and with a running iri node, run the following command t
 Assuming your IRI port is 14265
 
 search for transaction hashes starting with "ABC":
-curl http://localhost:14265 -X POST -H 'X-IOTA-API-Version: 1' -H 'Content-Type: application/json'   -d '{"command": "LedgerSearch.findElementsStartingWith", "searchTrytes": "ABC", "type": "transaction"}' | jq '.'
+curl http://localhost:14265 -X POST -H 'X-IOTA-API-Version: 1' -H 'Content-Type: application/json'   -d '{"command": "IXILedgerSearch.findElementsStartingWith", "searchTrytes": "ABC", "type": "transaction"}' | jq '.'
 search for tags starting with "ABC":
-curl http://localhost:14265 -X POST -H 'X-IOTA-API-Version: 1' -H 'Content-Type: application/json'   -d '{"command": "LedgerSearch.findElementsStartingWith", "searchTrytes": "ABC", "type": "tag"}' | jq '.'
+curl http://localhost:14265 -X POST -H 'X-IOTA-API-Version: 1' -H 'Content-Type: application/json'   -d '{"command": "IXILedgerSearch.findElementsStartingWith", "searchTrytes": "ABC", "type": "tag"}' | jq '.'
 search for bundle hashes starting with "ABC":
-curl http://localhost:14265 -X POST -H 'X-IOTA-API-Version: 1' -H 'Content-Type: application/json'   -d '{"command": "LedgerSearch.findElementsStartingWith", "searchTrytes": "ABC", "type": "bundle"}' | jq '.'
+curl http://localhost:14265 -X POST -H 'X-IOTA-API-Version: 1' -H 'Content-Type: application/json'   -d '{"command": "IXILedgerSearch.findElementsStartingWith", "searchTrytes": "ABC", "type": "bundle"}' | jq '.'
 search for addresses starting with "ABC":
-curl http://localhost:14265 -X POST -H 'X-IOTA-API-Version: 1' -H 'Content-Type: application/json'   -d '{"command": "LedgerSearch.findElementsStartingWith", "searchTrytes": "ABC", "type": "address"}' | jq '.'
+curl http://localhost:14265 -X POST -H 'X-IOTA-API-Version: 1' -H 'Content-Type: application/json'   -d '{"command": "IXILedgerSearch.findElementsStartingWith", "searchTrytes": "ABC", "type": "address"}' | jq '.'
 
 ```
 
